@@ -101,6 +101,11 @@ git merge origin/master
 
 ```
 
+3、还可以通过以下命令下载远程仓库中的数据
+```cmd
+git pull origin master
+```
+
 ## 推送到远程仓库
 
 ```cmd
