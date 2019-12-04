@@ -101,7 +101,53 @@ git merge origin/master
 
 ```
 
+## 推送到远程仓库
 
+```cmd
+git push [alias] [branch]
+```
+上述命令将[branch]分支推送成为[alias]远程仓库上叼[branch]分支
+
+```cmd
+
+$ touch runoob-test.txt      # 添加文件
+$ git add runoob-test.txt 
+$ git commit -m "添加到远程"
+master 69e702d] 添加到远程
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 runoob-test.txt
+
+$ git push origin master    # 推送到 Github
+
+```
+
+## 删除远程仓库
+
+```cmd
+git remote rm [别名]
+```
+* 例如
+```cmd
+
+$ git remote -v
+origin    git@github.com:tianqixin/runoob-git-test.git (fetch)
+origin    git@github.com:tianqixin/runoob-git-test.git (push)
+
+# 添加仓库 origin2
+$ git remote add origin2 git@github.com:tianqixin/runoob-git-test.git
+
+$ git remote -v
+origin    git@github.com:tianqixin/runoob-git-test.git (fetch)
+origin    git@github.com:tianqixin/runoob-git-test.git (push)
+origin2    git@github.com:tianqixin/runoob-git-test.git (fetch)
+origin2    git@github.com:tianqixin/runoob-git-test.git (push)
+
+# 删除仓库 origin2
+$ git remote rm origin2
+$ git remote -v
+origin    git@github.com:tianqixin/runoob-git-test.git (fetch)
+origin    git@github.com:tianqixin/runoob-git-test.git (push)
+```
 
 # 注
 
