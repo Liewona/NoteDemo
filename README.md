@@ -1,49 +1,49 @@
-# Git»ù±¾Ê¹ÓÃÁ÷³Ì
+# GitåŸºæœ¬ä½¿ç”¨æµç¨‹
 
-## 1.´´½¨Git²Ö¿â
+## 1.åˆ›å»ºGitä»“åº“
 
-1. `git init` Ê¹ÓÃµ±Ç°Ä¿Â¼×÷ÎªGit²Ö¿â£¬½øĞĞ³õÊ¼»¯
-2. `git init dir` Ö¸¶¨dir×÷ÎªGit²Ö¿â
+1. `git init` ä½¿ç”¨å½“å‰ç›®å½•ä½œä¸ºGitä»“åº“ï¼Œè¿›è¡Œåˆå§‹åŒ–
+2. `git init dir` æŒ‡å®šdirä½œä¸ºGitä»“åº“
 
-## 2.ÎÄ¼şÄÉÈë°æ±¾¿ØÖÆ
+## 2.æ–‡ä»¶çº³å…¥ç‰ˆæœ¬æ§åˆ¶
 
-Ê¹ÓÃ `git add`ÃüÁî¸æËßGit¶ÔÄÄĞ©ÎÄ¼ş½øĞĞ×·×Ù
+ä½¿ç”¨ `git add`å‘½ä»¤å‘Šè¯‰Gitå¯¹å“ªäº›æ–‡ä»¶è¿›è¡Œè¿½è¸ª
 
 ```cmd
 
 $ git add *.c
 $ git add README
-$ git commit -m "³õÊ¼»¯ÏîÄ¿°æ±¾"
+$ git commit -m "åˆå§‹åŒ–é¡¹ç›®ç‰ˆæœ¬"
 
 ```
-ÉÏÃæµÄÃüÁî½«Ä¿Â¼ÏÂÒÔ`.c`½áÎ²ÒÔ¼°READMEÎÄ¼şÌá½»µ½²Ö¿âÖĞ
+ä¸Šé¢çš„å‘½ä»¤å°†ç›®å½•ä¸‹ä»¥`.c`ç»“å°¾ä»¥åŠREADMEæ–‡ä»¶æäº¤åˆ°ä»“åº“ä¸­
 
-## Git¿ËÂ¡
+## Gitå…‹éš†
 
 ```cmd
     git clone <repo>
 
     git clone <repo> <directory>  
 ```
-µÚÒ»¸öÃüÁî½«git²Ö¿âÖĞµÄÏîÄ¿¿ËÂ¡µ½µ±Ç°Ä¿Â¼
-µÚ¶ş¸öÃüÁî½«git²Ö¿âÖĞµÄÏîÄ¿¿ËÂ¡µ½Ö¸¶¨Ä¿Â¼
+ç¬¬ä¸€ä¸ªå‘½ä»¤å°†gitä»“åº“ä¸­çš„é¡¹ç›®å…‹éš†åˆ°å½“å‰ç›®å½•
+ç¬¬äºŒä¸ªå‘½ä»¤å°†gitä»“åº“ä¸­çš„é¡¹ç›®å…‹éš†åˆ°æŒ‡å®šç›®å½•
 
-<repo>  Git²Ö¿â
-<directory> ±¾µØÄ¿Â¼
+<repo>  Gitä»“åº“
+<directory> æœ¬åœ°ç›®å½•
 
-# Ô¶³Ì²Ö¿â
+# è¿œç¨‹ä»“åº“
 
-windowsÖĞ£¬ĞèÒªÔÚ `C:\Windows\System32\drivers\etc\hosts` ÖĞÌí¼ÓÒ»ĞĞ
+windowsä¸­ï¼Œéœ€è¦åœ¨ `C:\Windows\System32\drivers\etc\hosts` ä¸­æ·»åŠ ä¸€è¡Œ
 `13.229.188.59    github.com`
 <br />
 
-×÷ÓÃÊÇ½«github.comµÄip×¢²áµ½±¾»ú
+ä½œç”¨æ˜¯å°†github.comçš„ipæ³¨å†Œåˆ°æœ¬æœº
 
 ```cmd
 git remote add [shortname] [url]
 
-ssh-keygen -t rsa -C "youremail@example.com"  // Éú³Éssh key
-// windows ÏÂÔÚ C:\User\.ssh\id_rsa.pubÎÄ¼şÖĞÉú³ÉÁËÒ»¸ökey£¬¸´ÖÆµ½githubÖĞÌí¼ÓsshÑéÖ¤¾ÍĞĞ
+ssh-keygen -t rsa -C "youremail@example.com"  // ç”Ÿæˆssh key
+// windows ä¸‹åœ¨ C:\User\.ssh\id_rsa.pubæ–‡ä»¶ä¸­ç”Ÿæˆäº†ä¸€ä¸ªkeyï¼Œå¤åˆ¶åˆ°githubä¸­æ·»åŠ sshéªŒè¯å°±è¡Œ
 
 ```
 
@@ -51,20 +51,50 @@ ssh-keygen -t rsa -C "youremail@example.com"  // Éú³Éssh key
 
 ```cmd
 
-$ mkdir runoob-git-test                     # ´´½¨²âÊÔÄ¿Â¼
-$ cd runoob-git-test/                       # ½øÈë²âÊÔÄ¿Â¼
-$ echo "# ²ËÄñ½Ì³Ì Git ²âÊÔ" >> README.md     # ´´½¨ README.md ÎÄ¼ş²¢Ğ´ÈëÄÚÈİ
-$ ls                                        # ²é¿´Ä¿Â¼ÏÂµÄÎÄ¼ş
+$ mkdir runoob-git-test                     # åˆ›å»ºæµ‹è¯•ç›®å½•
+$ cd runoob-git-test/                       # è¿›å…¥æµ‹è¯•ç›®å½•
+$ echo "# èœé¸Ÿæ•™ç¨‹ Git æµ‹è¯•" >> README.md     # åˆ›å»º README.md æ–‡ä»¶å¹¶å†™å…¥å†…å®¹
+$ ls                                        # æŸ¥çœ‹ç›®å½•ä¸‹çš„æ–‡ä»¶
 README
-$ git init                                  # ³õÊ¼»¯
-$ git add README.md                         # Ìí¼ÓÎÄ¼ş
-$ git commit -m "Ìí¼Ó README.md ÎÄ¼ş"        # Ìá½»²¢±¸×¢ĞÅÏ¢
-[master (root-commit) 0205aab] Ìí¼Ó README.md ÎÄ¼ş
+$ git init                                  # åˆå§‹åŒ–
+$ git add README.md                         # æ·»åŠ æ–‡ä»¶
+$ git commit -m "æ·»åŠ  README.md æ–‡ä»¶"        # æäº¤å¹¶å¤‡æ³¨ä¿¡æ¯
+[master (root-commit) 0205aab] æ·»åŠ  README.md æ–‡ä»¶
  1 file changed, 1 insertion(+)
  create mode 100644 README.md
 
-# Ìá½»µ½ Github
+# æäº¤åˆ° Github
 $ git remote add origin git@github.com:tianqixin/runoob-git-test.git
 $ git push -u origin master
 
 ```
+
+## æŸ¥çœ‹å½“å‰è¿œç¨‹åº“
+
+`git remote ` è¯¥å‘½ä»¤å¯æŸ¥çœ‹å½“å‰é…ç½®æœ‰å“ªäº›è¿œç¨‹ä»“åº“
+
+`git remote -v` æŸ¥çœ‹æ¯ä¸ªåˆ«åçš„å®é™…é“¾æ¥åœ°å€
+
+
+## æå–è¿œç¨‹ä»“åº“
+
+1ã€ä»è¿œç¨‹ä»“åº“ä¸‹è½½æ–°åˆ†æ”¯ä¸æ•°æ®
+
+```cmd
+git fetch
+```
+è¯¥å‘½ä»¤æ‰§è¡Œå®Œåéœ€è¦æ‰§è¡Œ `git merge`è¿œç¨‹åˆ†æ”¯åˆ°ä½ æ‰€åœ¨çš„åˆ†æ”¯ã€‚
+
+2ã€ä»è¿œç¨‹ä»“åº“æå–æ•°æ®å¹¶å°è¯•åˆå¹¶åˆ°å½“å‰åˆ†æ”¯
+
+```cmd
+git merge
+```
+
+* ä¾‹å¦‚
+```cmd
+git fetch origin
+
+
+```
+
