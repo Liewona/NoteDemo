@@ -97,6 +97,7 @@ git merge
 ```cmd
 git fetch origin
 
+git merge origin/master
 
 ```
 
