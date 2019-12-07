@@ -153,7 +153,14 @@ $ git remote -v
 origin    git@github.com:tianqixin/runoob-git-test.git (fetch)
 origin    git@github.com:tianqixin/runoob-git-test.git (push)
 ```
+# 当本地仓和远程仓认为不是统一仓库时
 
+后面添加参数可使强制合并
+
+使用:
+```cmd
+git pull origin master --allow-unrelated-histories
+```
 # 注
 
 * 执行 git fetch origin master 时，它的意思是从名为 origin 的远程上拉取名为 master 的分支到本地分支 origin/master 中。既然是拉取代码，当然需要同时指定远程名与分支名，所以分开写。
