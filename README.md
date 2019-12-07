@@ -22,8 +22,17 @@ $ git commit -m "初始化项目版本"
 
 ## 添加用户名邮箱
 
+全局
 ```cmd
-$ git config user.name “gitlab’s Name”
+$ git config --global user.name "github’s Name"
+$ git config --global user.email "github@xx.com"
+$ git config --list
+```
+
+
+非全局
+```cmd
+$ git config user.name "gitlab’s Name"
 $ git config user.email "gitlab@xx.com"
 $ git config --list
 ``
