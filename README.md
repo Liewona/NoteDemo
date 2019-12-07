@@ -143,6 +143,12 @@ $ git push origin master    # 推送到 Github
 
 ```
 
+### 防止每次push都输入密码
+在push和pull之前输入该参数，生成记录文件记录账号密码，下次就不需要输入了
+```cmd
+git config --global credential.helper store
+```
+
 ## 删除远程仓库
 
 ```cmd
