@@ -20,6 +20,14 @@ $ git commit -m "初始化项目版本"
 ```
 上面的命令将目录下以`.c`结尾以及README文件提交到仓库中
 
+## 添加用户名邮箱
+
+```cmd
+$ git config user.name “gitlab’s Name”
+$ git config user.email "gitlab@xx.com"
+$ git config --list
+``
+
 ## Git克隆
 
 ```cmd
