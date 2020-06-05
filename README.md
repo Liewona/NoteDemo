@@ -35,7 +35,7 @@ $ git config --list
 $ git config user.name "gitlab’s Name"
 $ git config user.email "gitlab@xx.com"
 $ git config --list
-``
+```
 
 ## Git克隆
 
