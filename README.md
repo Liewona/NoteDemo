@@ -83,8 +83,10 @@ $ git commit -m "添加 README.md 文件"        # 提交并备注信息
  create mode 100644 README.md
 
 # 提交到 Github
+$ git pull <远程主机名> <远程分支名>:<本地分支名>
 $ git remote add origin git@github.com:tianqixin/runoob-git-test.git
 $ git push -u origin master
+$ git push <远程主机名> <本地分支名>:<远程分支名>
 
 ```
 
